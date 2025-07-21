@@ -1,3 +1,8 @@
+:root {
+  --wh: white;
+  --bl: #202c36;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 .card,
 .cards-top-bottom,
@@ -19,6 +24,13 @@ sup {
 *,
 body {
   margin: 0;
+  background-color: var(--wh);
+  color: var(--bl);
+}
+
+.dark {
+  --wh: #202c36;
+  --bl: white;
 }
 #toggleDark,
 a {
@@ -75,10 +87,7 @@ samp {
   font-family: monospace, monospace;
   font-size: 1em;
 }
-.card,
-.details-content,
-.header,
-.hero,
+
 body {
   background-color: #fff;
 }
@@ -154,10 +163,7 @@ legend {
 textarea {
   overflow: auto;
 }
-.dark {
-  background-color: #202c36;
-  color: #fff;
-}
+
 *,
 .container {
   -webkit-box-sizing: border-box;
